@@ -23,7 +23,7 @@ body {
     background-color: #81edbe;
     min-height: 900px;
 }
-.card {
+.login-card {
     width: 75%;
     margin: 0;
     position: absolute;
@@ -32,7 +32,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-.card-header, .card-footer {
+.login {
     background-color: #fe42ab;
     min-height: 50px;
     /* border-radius: 25px;
@@ -44,5 +44,33 @@ body {
 .sign-in-btn {
     background-color: #fef0a6;
     margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ============================Styling for Dashboard============================ */
+.dashboard-card {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.hero-image {
+    background-image: url("../images/warhol-bunnies.png");
+    background-repeat: repeat;
+    height: 900px;
+}
+.dashboard{
+    background-color: #8d46b4;
+    min-height: 80px;
+    border-radius: 25px;
+    color: #fde774;
+}
+.dashboard-btn {
+    background-color: #fe42ab;
+    width: 159px;
+    margin-top: 7px;
     border-radius: 10px;
 }
