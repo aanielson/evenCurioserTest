@@ -1,0 +1,48 @@
+/* ============================Styling for landing page============================ */
+body {
+    background-color: #fde774;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8d46b4;
+    color: white;
+    text-align: center;
+}
+.bunny1 {
+    /* /* position: fixed; */
+    width: 100%;
+    object-fit: cover;
+    height: 900px;
+}
+/* body {
+} */
+.login-display {
+    background-color: #81edbe;
+    min-height: 900px;
+}
+.card {
+    width: 75%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.card-header, .card-footer {
+    background-color: #fe42ab;
+    min-height: 50px;
+    /* border-radius: 25px;
+    border: 2px solid #fe42ab; */
+}
+.card-body {
+    min-height: 200px;
+}
+.sign-in-btn {
+    background-color: #fef0a6;
+    margin-top: 20px;
+    border-radius: 10px;
+}
