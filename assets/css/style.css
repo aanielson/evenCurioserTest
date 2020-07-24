@@ -55,12 +55,12 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%;
 }
 .hero-image {
     background-image: url("../images/warhol-bunnies.png");
     background-repeat: repeat;
-    height: 900px;
+    min-height: 850px;
 }
 .dashboard{
     background-color: #8d46b4;
@@ -73,4 +73,56 @@ body {
     width: 159px;
     margin-top: 7px;
     border-radius: 10px;
+}
+
+/* ============================Styling for Classes Page============================ */
+.navbar {
+    background-color: #8d46b4;
+    color: white;
+    text-align: center;
+}
+.form-control {
+    border-radius: 25px;
+}
+.navbar-header {
+    color: #fde774;
+}
+.class-card-header {
+    background-color: #fe42ab;
+}
+.main {
+    background-color: azure;
+    min-height: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.class-card {
+    width: 30%;
+}
+.class-card-footer {
+    text-align: right;
+}
+#user-avatar {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: none;
+    padding: 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px -15px;
+    background-color: #fe42ab;
+}
+.navbar-brand {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

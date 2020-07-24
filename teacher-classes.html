@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Local CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>EvenCuriouser</title>
 </head>
+
 <body>
-  
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand ml-4" href="/teacher-classes.html"><img src="./assets/images/curious-bunny.png" alt="EvenCuriouser logo" width="50px" id="bunny-logo"><p class="centered">EvenCuriouser</p></a>
+            </div>
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gradebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Calendars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline md-form form-sm mt-0 nav-link mr-2">
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link" id="user-avatar"></p>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="hero-image">
+        <br>
+        <div class="container main">
+            <div class="class-card card mr-3 mb-3">
+                <div class="class-card-header card-header text-white">
+                    <h5>Miss P's First Grade</h5>
+                    <br>
+                    <p>Lindsey Paluso</p>
+                </div>
+                <div class="class-card-footer card-footer">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="class-card card mr-3 mb-3">
+                <div class="class-card-header card-header text-white">
+                    <h5>Miss P's Art</h5>
+                    <br>
+                    <p>Lindsey Paluso</p>
+                </div>
+                <div class="class-card-footer card-footer">
+                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-book" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+    <!--fixed footer-->
+    <footer class="footer pt-4">
+        <p><strong>EvenCuriouser</strong> Copyright 2020</p>
+    </footer>
     <!--Bootstrap JS & jQuery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <!--Local JS-->
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
