@@ -5,12 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Local CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>EvenCuriouser</title>
 </head>
 <body>
-  
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand ml-4" href="/teacher-classes.html"><img src="./assets/images/curious-bunny.png" alt="EvenCuriouser logo" width="50px" id="bunny-logo"><p class="centered">EvenCuriouser</p></a>
+            </div>
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/teacher-class-view.html">Students</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/teacher-assignments.html">Assignments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Class Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Class News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Global<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-text" href="#">Classes</a></li>
+                        <li><a class="nav-text" href="/teacher-gradebook.html">Gradebook</a></li>
+                        <li><a class="nav-text" href="#">Messages</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-nav ml-auto mini-nav">
+                    <form class="form-inline md-form form-sm mt-0 nav-link mr-2">
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                    <div class="nav-item">
+                        <p class="nav-link" id="user-avatar"></p>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container main mt-5 text-black text-center">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn text-white" id="create-assignment"><i class="fa fa-plus fa-1x" aria-hidden="true"></i>Create</button>
+            </div>
+            <div class="col-8 text-center">
+                <h5 class="mt-2">Assignments for <span id="class-name">Miss P's 1st Grade</span></h5>
+            </div>
+            <div class="col-2 mt-2">
+                <a class="dropdown-toggle sort-toggle" data-toggle="dropdown" href="#">Sort</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-text" href="#">Edit</a></li>
+                        <li><a class="nav-text" href="#">Delete</a></li>
+                        <li><a class="nav-text" href="#">Grade Submissions</a></li>
+                    </ul> 
+            </div>
+        </div>
+        <table style="width: 100%;" class="mt-5">
+            <tr>
+                <th>Reading & Writing</th>
+                <th>Instructions</th>
+                <th>Location</th>
+                <th>Submitted</th>
+                <th>Due Date</th>
+                <!-- <th>Edit</th> -->
+            </tr>
+            <tr>
+                <td>Letter Quiz</td>
+                <td><a href="#"><i class="fa fa-ellipsis-h assignment-toggle" aria-hidden="true"></i></a></td>
+                <td><a href="#"><i class="fa fa-link assignment-toggle" aria-hidden="true"></i></a></td>
+                <td><span id="submitted-amount">3</span>/6</td>
+                <td>August 10 
+                    <a class="dropdown-toggle assignment-toggle" data-toggle="dropdown" href="#"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-text" href="#">Edit</a></li>
+                        <li><a class="nav-text" href="#">Delete</a></li>
+                        <li><a class="nav-text" href="#">Grade Submissions</a></li>
+                    </ul> 
+            </tr>
+        </table>
+    </div>
+    <!--fixed footer-->
+    <footer class="footer pt-4">
+        <p><strong>EvenCuriouser</strong> Copyright 2020</p>
+    </footer>
     <!--Bootstrap JS & jQuery-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
