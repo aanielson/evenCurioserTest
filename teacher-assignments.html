@@ -251,12 +251,82 @@
                 <div class="modal-header">
                     <h5>Update Assignment</h5>
                 </div>
-                <div class="modal-body">
+                <form>
+                    <div class="modal-body">
+                        <div class="row mr-1">
+                            <div class="col-md-6 form-line">
+                                <div class="form-group">
+                                    <label for="edit-assignment-title">Assignment Title</label>
+                                    <br>
+                                    <input type="text" id="edit-assignment-title" class="form-control"
+                                        name="edit-assignment-title" placeholder="Enter Title">
+                                </div>
+                                <div class="form-group">
+                                    <label for="edit-assignment-instructions">Instructions</label>
+                                    <br>
+                                    <textarea type="text" id="edit-assignment-instructions" class="form-control"
+                                        style="width: 100%; height: 140px;" name="edit-assignment-instructions"
+                                        placeholder="Enter Intrustions"></textarea>
+                                </div>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" id="modal-button" data-dismiss="modal">Close</button>
-                </div>
+                            </div>
+                            <div class="col-md-6 edit-assignment-specifics form-line mb-3">
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="edit-class">For</label>
+                                        <br>
+                                        <select id="edit-class" class="form-control" name="select-class">
+                                            <option value="edit-class-0">Miss P's 1st Grade</option>
+                                            <option value="edit-class-1">Miss P's Art</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 form-padding-right">
+                                        <label for="edit-category">Category</label>
+                                        <br>
+                                        <select id="edit-category" class="form-control" name="select-category">
+                                            <option value="edit-category-0">Reading/Writing</option>
+                                            <option value="edit-category-1">Math</option>
+                                            <option value="edit-category-2">Science</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="edit-assignment-points">Points</label>
+                                        <input type="number" id="edit-assignment-points" class="form-control"
+                                            name="edit-assignment-points">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="edit-assignment-date">Due Date</label>
+                                        <input type="date" id="edit-assignment-date" class="form-control"
+                                            name="edit-assignment-date">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="edit-rubric-link">Rubric</label>
+                                        <br>
+                                        <input type="text" id="create-rubric-link" class="form-control"
+                                            name="edit-rubric-link" placeholder="URL">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="edit-assignment-location">Location</label>
+                                        <br>
+                                        <input type="text" id="edit-assignment-location" class="form-control"
+                                            name="edit-assignment-location" placeholder="URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="submit" class="btn float-right btnSubmit" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
