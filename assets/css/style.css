@@ -158,3 +158,10 @@ a:hover {
     width: 100%;
     border-radius: 10px;
 }
+.create-assignment-specifics {
+    border: solid 1px grey;
+}
+
+/* .form-padding-right {
+    margin-right: 10px;
+} */

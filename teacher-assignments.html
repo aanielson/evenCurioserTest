@@ -59,7 +59,8 @@
     <div class="container main mt-5 text-black text-center">
         <div class="row">
             <div class="col-2">
-                <button class="btn text-white" id="create-assignment" data-toggle="modal" data-target="#createAssignment">
+                <button class="btn text-white" id="create-assignment" data-toggle="modal"
+                    data-target="#createAssignment">
                     <i class="fa fa-plus fa-1x" aria-hidden="true"></i>Create
                 </button>
             </div>
@@ -100,7 +101,9 @@
             </tr>
         </table>
     </div>
-    <!--==================MODALS with edit info==================-->
+
+    <!--==================MODALS with create/edit info==================-->
+    <!-- <div class="container"> -->
     <!--modal for Creating new assignments-->
     <div id="createAssignment" class="modal fade" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -110,43 +113,45 @@
                     <h5>Create Assignment</h5>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <form>
-                            <div class="col-7">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="create-assignment-title">Title</label>
-                                        <input type="text" id="create-assignment-title"
-                                            name="create-assignment-title"><br><br>
-                                        <label for="create-assignment-instructions">Instructions</label><br><br>
-                                        <input type="text" id="create-assignment-instructions"
-                                            name="create-assignment-instructions"><br><br>
-                                    </div>
+                    <form>
+                        <div class="row mr-1">
+                            <div class="col-md-6 form-line">
+                                <div class="form-group">
+                                    <label for="create-assignment-title">Assignment Title</label>
+                                    <br>
+                                    <input type="text" id="create-assignment-title" class="form-control"
+                                        name="create-assignment-title" placeholder="Enter Title">
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <label for="create-rubric-link">Link Rubric</label>
-                                        <input type="text" id="create-rubric-link" name="create-rubric-link">
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="create-assignment-location">Link Location</label><br><br>
-                                        <input type="text" id="create-assignment-location"
-                                            name="create-assignment-location"><br><br>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="create-assignment-instructions">Instructions</label>
+                                    <br>
+                                    <textarea type="text" id="create-assignment-instructions" class="form-control" style="width: 100%; height: 140px;"
+                                        name="create-assignment-instructions" placeholder="Enter Intrustions"></textarea>
                                 </div>
+                                
                             </div>
-                            <div class="col-5">
-                                <div class="row">
-                                    <label for="select-class">For</label>
-                                    <div class="col-6">
-                                        <select id="select-class" name="select-class">
+                            <div class="col-md-6 create-assignment-specifics form-line mb-3">
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="select-class">For</label>
+                                        <br>
+                                        <select id="select-class" class="form-control" name="select-class">
                                             <option value="class-0">Miss P's 1st Grade</option>
                                             <option value="class-1">Miss P's Art</option>
                                         </select>
                                     </div>
-                                    <div class="col-6">
-                                        <ul>
-                                            <li class="dropdown">
+                                    <div class="col-sm-6 form-padding-right">
+                                        <label for="select-category">Category</label>
+                                        <br>
+                                        <select id="select-category" class="form-control" name="select-category">
+                                            <option value="category-0">Reading/Writing</option>
+                                            <option value="category-1">Math</option>
+                                            <option value="category-2">Science</option>
+                                        </select>
+                                    </div>
+                                    <!-- <div class="col-sm-6">
+                                        
+                                            <div class="dropdown">
                                                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Select
                                                     Students<b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
@@ -193,23 +198,38 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                        </ul>
-
-                                        <!-- <select id="select-students" name="students">
-                                            <option value="student-0">All</option>
-                                            <option value="student-1">Abby N</option>
-                                            <option value="student-2">Attila</option>
-                                            <option value="student-3">Khan</option>
-                                            <option value="student-4">Lisa</option>
-                                            <option value="student-5">Jordan</option>
-                                            <option value="student-6">Cas</option>
-                                        </select> -->
+                                            </div>
+                                    </div> -->
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="create-assignment-points">Points</label>
+                                        <input type="number" id="create-assignment-points" class="form-control"
+                                            name="create-assignment-points">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="create-assignment-date">Due Date</label>
+                                        <input type="date" id="create-assignment-date" class="form-control"
+                                            name="create-assignment-date">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-6">
+                                        <label for="create-rubric-link">Rubric</label>
+                                        <br>
+                                        <input type="text" id="create-rubric-link" class="form-control"
+                                            name="create-rubric-link" placeholder="URL">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="create-assignment-location">Location</label>
+                                        <br>
+                                        <input type="text" id="create-assignment-location" class="form-control"
+                                            name="create-assignment-location" placeholder="URL">
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn" id="modal-button" data-dismiss="modal">Close</button>
@@ -251,6 +271,8 @@
             </div>
         </div>
     </div>
+    <!-- </div> -->
+
     <!--fixed footer-->
     <footer class="footer pt-4">
         <p><strong>EvenCuriouser</strong> Copyright 2020</p>
