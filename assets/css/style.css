@@ -169,7 +169,7 @@ a:hover {
     margin-right: 10px;
 } */
 
-/* ============================Styling for Assignments Page============================ */
+/* ============================Styling for assignments & gradebook Pages============================ */
 .main-header {
     background-color: #fe42ab;
     width: 100%;
@@ -194,4 +194,24 @@ tr td th {
 }   
 .vertical-data {
     vertical-align: baseline;
+}
+
+/* ============================Styling for student lookup============================ */
+#student-avatar {
+    height: 80%;
+    height: 40%;
+    min-height: 20px;
+    min-width: 20px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    border: none;
+    padding: 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px -10px;
+    background-color: #81edbe;
+    float: right;
 }
