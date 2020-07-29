@@ -95,6 +95,7 @@ body {
     min-height: 500px;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 120px;
 }
 .class-card {
     width: 33%;
@@ -164,3 +165,11 @@ a:hover {
 /* .form-padding-right {
     margin-right: 10px;
 } */
+
+/* ============================Styling for Assignments Page============================ */
+.main-header {
+    background-color: #fe42ab;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+}
