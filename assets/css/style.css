@@ -96,9 +96,12 @@ body {
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 120px;
+    border-radius: 5px;
 }
 .class-card {
-    width: 33%;
+    width: 25%;
+    border-radius: 5px;
+    border: 0;
 }
 .class-card-footer {
     text-align: right;
@@ -172,4 +175,23 @@ a:hover {
     width: 100%;
     margin: 0;
     padding: 30px;
+}
+.gradebook-display {
+    overflow-x: scroll; 
+    overflow-y: scroll;
+    max-height: 500px;
+    max-width: 100%;
+}
+.table-wrapper {
+    overflow-x: scroll; 
+    overflow-y: scroll;
+    max-width: 100%;
+}
+tr td th {
+    max-height: 60px;
+    height: 60px;
+    margin: auto;
+}   
+.vertical-data {
+    vertical-align: baseline;
 }
