@@ -88,16 +88,16 @@
             </tr>
             <tr>
                 <td>Letter Quiz</td>
-                <td><a href="#"><i class="fa fa-ellipsis-h assignment-toggle" aria-hidden="true"></i></a></td>
+                <td><a href="#" data-toggle="modal" data-target="#viewAssignment"><i
+                            class="fa fa-ellipsis-h assignment-toggle" aria-hidden="true"></i></a></td>
                 <td><a href="#"><i class="fa fa-link assignment-toggle" aria-hidden="true"></i></a></td>
                 <td><span id="submitted-amount">3</span>/<span id="class-size">6</span></td>
                 <td>August 10
                     <a class="dropdown-toggle assignment-toggle" data-toggle="dropdown" href="#"></a>
                     <ul class="dropdown-menu">
-                        <li><a class="nav-text" href="#" data-toggle="modal"
-                            data-target="#editAssignment">Edit</a></li>
-                        <li><a class="nav-text" href="#" data-toggle="modal"
-                            data-target="#deleteAssignment">Delete</a></li>
+                        <li><a class="nav-text" href="#" data-toggle="modal" data-target="#editAssignment">Edit</a></li>
+                        <li><a class="nav-text" href="#" data-toggle="modal" data-target="#deleteAssignment">Delete</a>
+                        </li>
                         <li><a class="nav-text" href="#">Grade Submissions</a></li>
                     </ul>
             </tr>
@@ -105,7 +105,34 @@
     </div>
 
     <!--==================MODALS with create/edit info==================-->
-    <!-- <div class="container"> -->
+    <!-- modal for displaying instructions -->
+    <div id="viewAssignment" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <!--modl content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Instructions for <span id="modal-assignment-name">Letter Quiz</span></h3>
+                    <button type="button" class="btn p-0 m-0" id="modal-button" data-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-assignment-instructions">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn float-right btnSubmit" data-toggle="modal" data-target="#editAssignment"
+                        data-dismiss="modal">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--modal for Creating new assignments-->
     <div id="createAssignment" class="modal fade" role="dialog">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -347,8 +374,8 @@
                 </div>
                 <div class="modal-footer">
                     <input type="submit" class="btn float-right btnSubmit" value="Delete" />
-                    <button class="btn float-right btnSubmit"data-toggle="modal"
-                    data-target="#editAssignment" data-dismiss="modal">Edit</button>
+                    <button class="btn float-right btnSubmit" data-toggle="modal" data-target="#editAssignment"
+                        data-dismiss="modal">Edit</button>
                 </div>
             </div>
         </div>
@@ -358,6 +385,7 @@
     <footer class="footer pt-4">
         <p><strong>EvenCuriouser</strong> Copyright 2020</p>
     </footer>
+
     <!--Bootstrap JS & jQuery-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
