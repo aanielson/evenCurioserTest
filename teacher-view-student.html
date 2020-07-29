@@ -5,12 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Local CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>EvenCuriouser</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand ml-4" href="/teacher-classes.html"><img src="./assets/images/curious-bunny.png" alt="EvenCuriouser logo" width="50px" id="bunny-logo"><p class="centered">EvenCuriouser</p></a>
+            </div>
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gradebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Calendars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline md-form form-sm mt-0 nav-link mr-2">
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <p class="nav-link" id="user-avatar"></p>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container main mt-5 text-black text-center">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p id="student-avatar"></p>
+                <h5 class="mt-2">Academic Summary for <span id="student-name">Attila</span></h5>
+            </div>
+        </div>
+        <table style="width: 100%;" class="mt-2">
+            <tr>
+                <th>Class</th>
+                <th>Upcoming Assignments</th>
+                <th>Missing Assignments</th>
+                <th>Grade</th>
+                <th>Class Link</th>
+                <th>Message Student</th>
+                <th>Message Guardian</th>
+                <!-- <th>Edit</th> -->
+            </tr>
+            <tr>
+                <td>Miss P's 1st Grade</td>
+                <td>2</td>
+                <td>3</td>
+                <td>C</td>
+                <td><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                <td><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                <td><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+            </tr>
+            <tr>
+                <td>Miss P's Art</td>
+                <td>2</td>
+                <td>3</td>
+                <td>C</td>
+                <td><a href="#"><i class="fa fa-link" aria-hidden="true"></i></a></td>
+                <td><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                <td><a href="#"><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+            </tr>
+        </table>
+    </div>
+
     <!--fixed footer-->
     <footer class="footer">
         <p>Copyright 2020</p>
